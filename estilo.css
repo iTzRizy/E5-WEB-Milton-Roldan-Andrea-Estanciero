@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --bg: #252525;
+    --chesse: #ffa400;
+    --redi: #fc2933;
+    --white: #ffff;
+    /* linear-gradient(40deg, #ffa100, #fb103d) */
+}
+
+body{
+    margin: auto;
+    background-color: #252525;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.navbar {
+    display: flex;
+    gap: 80% ;
+    margin: 10px;
+}
+
+.zappi {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home {
+    cursor: pointer;
+}
+
+#hero {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 15px;
+    width: 33%;
+
+}
+
+.textos h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.textos h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.textos p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 40px;
+    background: linear-gradient(80deg, #ffa100, #fb103d);
+    color: var(--white);
+    font-size: 10;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* width: 50%; */
+}
+
+.img1 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 90px;
+}
+
+.img2 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.pizza {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    right: 90px;
+    top: 10px;
+}
+
+.pizza2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    margin-right: 250px;
+}
+
+/*Seccio "Hoy Recomenamos"*/
+.section-recomendacion{
+    margin: 35px;
+}
+
+.conteiner-recomendacion{
+    display: flex;
+    gap: 30px;
+    margin: 60px;
+}
+.recomendaciones{
+    display: flex;
+    background: #4e4d4d;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+    width: 50vw;
+    height: 17vh;
+    padding: 5px;
+}
+/*Imagen Seccion Recomendacion*/
+.img-recomendacion{
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-textos{
+    display: block;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+/*Titulo Seccion Recomendacion*/
+.title-recomendacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    font-size:15px;
+    font-weight:bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+/*Texto Seccion Recomendacion*/
+.texto-recomendacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    opacity: 0.3;
+    letter-spacing: 0.2px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 50px;
+
+}
+/*Precio Seccion Recomendacion*/
+.precio-recomendacion{
+background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+font-weight: 900;
+font-size: 20px;
+margin-top: 80px;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*Boton Seccion Recomendacion*/
+.button-recomendacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    margin: 30px;
+    margin-left:250px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 17.5px;
+    background: rgb(252,162,7);
+    background: linear-gradient(90deg, rgba(252,162,7,0.8939950980392157) 0%, rgba(251,16,61,1) 100%);
+    color: #ffffff;
+}
+/* Seccion Categorias*/
+.title-categoria{
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+.contenedor-categoria{
+    display: flex;
+    gap: 50px;
+    margin: 100px;
+}
+
+.card-categoria{
+    background: #3c3b3b;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+    width: 147px;
+    height: 171px;
+    left: 116px;
+    top: 821px;
+}
+/*Imagen Seccion Categorias*/
+.img-categoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#pizza-img{
+margin-bottom: 15px;
+}
+/*Titulo Seccion Categorias*/
+.parrafo-categoria{
+    text-align: center;
+    margin-top:10px;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+/*Imagen Rectangulo Seccion Categorias*/
+.rectangle-categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100wh;
+    height: 5vh;
+}
+
+/* Seccion Mas Populares*/
+.mas-populares{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 35px;
+    margin-left: 90px;
+}
+.title-populares{
+    margin-left: 30px;
+}
+.card-populares{
+    background: #4e4d4d;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    height: 25vh;
+}
+.nombre-populares{
+    display: flex;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.descripcion-populares{
+    display:flex;
+    position: absolute;
+    opacity: 0.3;
+    letter-spacing: 0.2px;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+
+}
+.precio-populares{
+    display: flex;
+    position: absolute;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    font-size: 20px;
+    margin: auto;
+}
+
+.btn{
+    width: 6vw;
+    height: 5vh;
+    position: relative;
+    margin:0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 68%;
+    margin-top:0%;
+    margin-bottom: 0%;
+    border: none;
+    border-radius: 17.5px;
+    background: rgb(252,162,7);
+    background: linear-gradient(90deg, rgba(252,162,7,0.8939950980392157) 0%, rgba(251,16,61,1) 100%);
+    color: #ffffff;
+}
+
+@media (max-width:1080) {
+    .recomendaciones{
+        width: 50vw;
+    }
+    .button-recomendacion{
+        display: flex;
+    }
+    .precio-recomendacion{
+        position: relative;
+    }
+
+}
